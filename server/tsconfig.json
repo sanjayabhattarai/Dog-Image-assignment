@@ -3,6 +3,7 @@
     "target": "ES2020",
     "useDefineForClassFields": true,
     "lib": ["ES2020"],
+    "types": ["node", "@playwright/test"],
     "module": "ESNext",
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -17,10 +18,11 @@
 
     /* Linting */
     "strict": true,
+    "forceConsistentCasingInFileNames": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["**/*.ts"],
+  "include": ["**/*.ts", "../tests/dog.spec.ts"],
   "exclude": ["node_modules"]
 }
